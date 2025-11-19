@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: goldenrod;
+}
+
+header{
+    height: 80px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+header>h2{
+    font-size: 2.3rem;
+    color: azure;
+}
+
+header>nav>ul{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+header>nav>ul>li{
+    list-style-type: none;
+
+}
+header>nav>ul>li>a{
+    color: grey;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.6s ease-in;
+}
+
+header>nav>ul>li>a:hover{
+    color: green;
+}
+
+
+.hero-sec{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    gap: 20px;  
+
+}
+
+.hero-title{
+    font-size: 3rem;
+    font-weight: 800;
+    color: gainsboro;
+    text-align: center;
+}
+
+#hero-tt{
+    color: white;
+}
+
+.hero-subtitle{
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+}
+
+.hero-button,.button--primary{
+    padding: 1em 3em;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.6s ease-in;
+
+}
+.button--primary:hover{
+    background-color: darkgreen;
+}
+
+.movies-sec{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.movie-sec-title{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.movies-cards{
+    height: 70%;
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.movie-card{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.movie-card img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin: auto;
+;
+}
+
+
+.movie-card>p{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+
+.cta-sec{
+    min-height: 300px;
+}
+
+.cta-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cta-form{
+    padding: 20px 3em ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form-group>label{
+    font-size: 1rem;
+}
+
+.text{
+    width: 400px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    text-indent: 20px;
+}
+
+
+.text::placeholder{
+    text-align: left;
+}
+
+.submit-but{
+    padding: 0.8em 2.5em;
+
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
